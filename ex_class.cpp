@@ -69,7 +69,7 @@ int checkwin()
 
 void board()
 {
-	system("/usr/bin/cls");
+	system("clear");
 	cout<<"\n\n\tTic Tac Toe\n\n";
 	cout<<"Player1(x) = Player2(o)"<<endl<<endl;
 	cout<<endl;
