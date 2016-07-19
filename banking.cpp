@@ -130,7 +130,7 @@ int main()
 		cout<<"\n\n\t08. EXIT";
 		cout<<"\n\n\tSelect Your Option (1-8) ";
 		cin>>ch;
-		system("cls");
+		system("clear");
 		switch(ch)
 		{
 		case '1':
