@@ -2,7 +2,7 @@
 
 import MySQLdb
 
-# Open database connection
+# Open database connection, user,      id,        db, table
 db = MySQLdb.connect("localhost","TESTID","Test!234","test" )
 
 # prepare a cursor object using cursor() method
