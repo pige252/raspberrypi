@@ -1,25 +1,26 @@
 #!/usr/bin/python
+#-*- coding : utf-8 -*-
 
 import MySQLdb
 import sys
 
 try:
-    db = MySQLdb.connect("localhost",TESTID","Test!234","test")
+    db = MySQLdb.connect('localhost','root','P@ssw0rd','test')
 
     cursor = db.cursor()
     cursor.execute("SELECT VERSION()")
 
     data = cursor.fetchone()
 
-    print ("Database version : %s " %data)
+    print "Database version : %s " %data
 
-excpet MySQLdb, e:
+except MySQLdb, e:
 
     print "Error %d:%s"%(e.args[0],e.args[1])
     sys.exit(1)
 
 finally:
-    if con:
+    if db:
         db.close()
 
 
